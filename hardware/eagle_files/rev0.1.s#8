@@ -6348,6 +6348,41 @@ at 13/06/2012 10:17:53</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="supply2">
+<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
+GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
+Please keep in mind, that these devices are necessary for the
+automatic wiring of the supply signals.&lt;p&gt;
+The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
+In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="+05V">
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="0.635" x2="0" y2="1.905" width="0.1524" layer="94"/>
+<circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
+<text x="-1.905" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="+5V" prefix="SUPPLY">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="+5V" symbol="+05V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6382,6 +6417,13 @@ at 13/06/2012 10:17:53</description>
 <part name="R9" library="resistor" deviceset="R-US_" device="R0603" value="274"/>
 <part name="SMA_IN_1" library="Amphenol_By_element14_Batch_1" deviceset="901-143" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
+<part name="L5" library="resistor" deviceset="R-US_" device="R0603" value="120nH"/>
+<part name="C42" library="resistor" deviceset="C-US" device="C1206" value="0.1uF"/>
+<part name="C43" library="resistor" deviceset="C-US" device="C1206" value="1nF"/>
+<part name="GND8" library="supply1" deviceset="GND" device=""/>
+<part name="GND9" library="supply1" deviceset="GND" device=""/>
+<part name="SUPPLY1" library="supply2" deviceset="+5V" device=""/>
+<part name="R1" library="resistor" deviceset="R-US_" device="R1206" value="0"/>
 </parts>
 <sheets>
 <sheet>
@@ -6399,15 +6441,21 @@ at 13/06/2012 10:17:53</description>
 <text x="5.08" y="55.88" size="0.8128" layer="91">Intentionally Blank</text>
 <text x="5.08" y="53.34" size="0.8128" layer="91">Intentionally Blank</text>
 <text x="27.94" y="86.36" size="0.8128" layer="91">Intentionally Blank</text>
+<frame x1="-167.64" y1="15.24" x2="-60.96" y2="91.44" columns="8" rows="5" layer="91"/>
+<text x="-96.52" y="22.86" size="5.08" layer="91">RF Input</text>
+<frame x1="-147.32" y1="109.22" x2="-83.82" y2="172.72" columns="8" rows="5" layer="91"/>
+<text x="-106.68" y="114.3" size="5.08" layer="91">VPSV</text>
+<frame x1="-40.64" y1="-15.24" x2="88.9" y2="109.22" columns="8" rows="5" layer="91"/>
+<text x="58.42" y="-10.16" size="5.08" layer="91">AD8332</text>
 </plain>
 <instances>
 <instance part="U1" gate="A" x="-10.16" y="86.36" smashed="yes">
 <attribute name="NAME" x="10.16" y="81.28" size="2.54" layer="95" ratio="10" rot="SR0"/>
 <attribute name="VALUE" x="10.16" y="76.2" size="2.54" layer="96" ratio="10" rot="SR0"/>
 </instance>
-<instance part="U2" gate="A" x="116.84" y="73.66"/>
-<instance part="U3" gate="A" x="215.9" y="78.74"/>
-<instance part="U4" gate="A" x="218.44" y="25.4"/>
+<instance part="U2" gate="A" x="175.26" y="63.5"/>
+<instance part="U3" gate="A" x="274.32" y="68.58"/>
+<instance part="U4" gate="A" x="276.86" y="15.24"/>
 <instance part="C6" gate="G$1" x="58.42" y="63.5"/>
 <instance part="C5" gate="G$1" x="66.04" y="63.5"/>
 <instance part="GND1" gate="1" x="58.42" y="55.88"/>
@@ -6449,6 +6497,19 @@ at 13/06/2012 10:17:53</description>
 <attribute name="VALUE" x="-129.6924" y="37.465" size="2.0828" layer="96" ratio="10" rot="SR180"/>
 </instance>
 <instance part="GND7" gate="1" x="-91.44" y="40.64"/>
+<instance part="L5" gate="G$1" x="-109.22" y="149.86" smashed="yes" rot="R90">
+<attribute name="NAME" x="-102.87" y="150.9014" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-100.33" y="148.082" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="C42" gate="G$1" x="-119.38" y="137.16"/>
+<instance part="C43" gate="G$1" x="-109.22" y="137.16"/>
+<instance part="GND8" gate="1" x="-109.22" y="129.54"/>
+<instance part="GND9" gate="1" x="-119.38" y="129.54"/>
+<instance part="SUPPLY1" gate="+5V" x="-109.22" y="157.48"/>
+<instance part="R1" gate="G$1" x="-121.92" y="149.86" smashed="yes" rot="R90">
+<attribute name="NAME" x="-115.57" y="150.9014" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-115.57" y="148.082" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -6515,6 +6576,14 @@ at 13/06/2012 10:17:53</description>
 <pinref part="C2" gate="G$1" pin="2"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="C43" gate="G$1" pin="2"/>
+<pinref part="GND8" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C42" gate="G$1" pin="2"/>
+<pinref part="GND9" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="LMD1" class="0">
 <segment>
@@ -6546,8 +6615,8 @@ at 13/06/2012 10:17:53</description>
 </segment>
 <segment>
 <pinref part="U2" gate="A" pin="RF1P"/>
-<wire x1="116.84" y1="48.26" x2="114.3" y2="48.26" width="0.1524" layer="91"/>
-<label x="109.22" y="48.26" size="1.778" layer="95"/>
+<wire x1="175.26" y1="38.1" x2="172.72" y2="38.1" width="0.1524" layer="91"/>
+<label x="167.64" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RFIN" class="0">
@@ -6558,8 +6627,8 @@ at 13/06/2012 10:17:53</description>
 </segment>
 <segment>
 <pinref part="U2" gate="A" pin="RF1N"/>
-<wire x1="116.84" y1="50.8" x2="114.3" y2="50.8" width="0.1524" layer="91"/>
-<label x="109.22" y="50.8" size="1.778" layer="95"/>
+<wire x1="175.26" y1="40.64" x2="172.72" y2="40.64" width="0.1524" layer="91"/>
+<label x="167.64" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -6592,6 +6661,11 @@ at 13/06/2012 10:17:53</description>
 <pinref part="U1" gate="A" pin="VPS2"/>
 <wire x1="-10.16" y1="10.16" x2="-12.7" y2="10.16" width="0.1524" layer="91"/>
 <label x="-15.24" y="10.16" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="-121.92" y1="154.94" x2="-121.92" y2="157.48" width="0.1524" layer="91"/>
+<label x="-121.92" y="160.02" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -6652,6 +6726,34 @@ at 13/06/2012 10:17:53</description>
 <pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="-91.44" y1="76.2" x2="-91.44" y2="78.74" width="0.1524" layer="91"/>
 <label x="-93.98" y="78.74" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="VPSV" class="0">
+<segment>
+<pinref part="L5" gate="G$1" pin="1"/>
+<wire x1="-109.22" y1="144.78" x2="-109.22" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="-109.22" y1="142.24" x2="-119.38" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="C42" gate="G$1" pin="1"/>
+<wire x1="-119.38" y1="142.24" x2="-119.38" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="C43" gate="G$1" pin="1"/>
+<wire x1="-109.22" y1="142.24" x2="-109.22" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="-119.38" y1="142.24" x2="-121.92" y2="142.24" width="0.1524" layer="91"/>
+<label x="-132.08" y="142.24" size="1.778" layer="95"/>
+<wire x1="-121.92" y1="142.24" x2="-127" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="-121.92" y1="142.24" x2="-121.92" y2="144.78" width="0.1524" layer="91"/>
+<junction x="-121.92" y="142.24"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="U1" gate="A" pin="VPSV"/>
+<wire x1="-10.16" y1="17.78" x2="-12.7" y2="17.78" width="0.1524" layer="91"/>
+<label x="-15.24" y="17.78" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="+5V" class="0">
+<segment>
+<pinref part="L5" gate="G$1" pin="2"/>
+<pinref part="SUPPLY1" gate="+5V" pin="+5V"/>
 </segment>
 </net>
 </nets>
