@@ -1,6 +1,6 @@
 Pinlist
 
-Exported from rev0.1.sch at 1/8/15 6:55 PM
+Exported from rev0.1.sch at 1/8/15 8:57 PM
 
 EAGLE Version 7.2.0 Copyright (c) 1988-2014 CadSoft
 
@@ -47,6 +47,12 @@ C5       1        1          pas      LMD2
 
 C6       1        1          pas      LMD1
          2        2          pas      GND
+
+C7       +        -          pas      GND
+         -        +          pas      +5V
+
+C8       +        -          pas      GND
+         -        +          pas      -5V
 
 C9       1        1          pas      N$5
          2        2          pas      N$8

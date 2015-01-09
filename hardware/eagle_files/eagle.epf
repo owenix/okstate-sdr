@@ -350,6 +350,7 @@ UsedLibrary="/home/justin/Electronics/Eagle/lbr/ad8332.lbr"
 UsedLibrary="/home/justin/Electronics/Eagle/lbr/ad8333.lbr"
 UsedLibrary="/home/justin/Electronics/Eagle/lbr/Amphenol_By_element14_Batch_1.lbr"
 UsedLibrary="/home/justin/Electronics/Eagle/lbr/ds90c401.lbr"
+UsedLibrary="/home/justin/Electronics/Eagle/lbr/SparkFun-Connectors.lbr"
 
 [Win_1]
 Type="Control Panel"
