@@ -1,0 +1,236 @@
+Netlist
+
+Exported from rev0.1.sch at 1/8/15 6:54 PM
+
+EAGLE Version 7.2.0 Copyright (c) 1988-2014 CadSoft
+
+Net        Part     Pad      Pin        Sheet
+
++5V        +5V_IN   1        1          1
+           +5V_IN   2        2          1
+           C3       1        1          1
+           L3       2        2          1
+           L5       2        2          1
+           L6       1        1          1
+           PH10     1        S          1
+           PH11     3        S          1
+           PH12     1        S          1
+           PH13     3        S          1
+           R6       2        2          1
+           RST      3        S          1
+           Z3_SPARE 1        VCC        1
+
++5VS       A1       8        DISABLE*   1
+           A2       7        +VS        1
+           A2       8        DISABLE*   1
+           C44      1        1          1
+           C46      1        1          1
+           L6       2        2          1
+
++5VS_FLTRD A1       7        +VS        1
+
+-5V        -5V_IN   1        1          1
+           -5V_IN   2        2          1
+           L4       1        1          1
+           L7       2        2          1
+
+-5VS       A1       4        -VS        1
+           A2       4        -VS        1
+           C27      2        2          1
+           C28      2        2          1
+           C45      1        1          1
+           C47      1        1          1
+           L7       1        1          1
+
+4LON       R1       1        1          1
+           U2       5        4LON       1
+           Z3       2        DO1-       1
+
+4LOP       R1       2        2          1
+           U2       4        4LOP       1
+           Z3       3        DO1+       1
+
+A1OUT      A1       6        VOUT       1
+           C26      1        1          1
+           R32      2        2          1
+           R39      1        1          1
+
+A2OUT      A2       6        VOUT       1
+           C29      1        1          1
+           R33      2        2          1
+           R40      1        1          1
+
+CCOMP      A1       5        CCOMP      1
+           C27      1        1          1
+
+CCOMP_A2   A2       5        CCOMP      1
+           C28      1        1          1
+
+ENBL       ENABLE   2        S          1
+           U2       26       ENBL       1
+
+GND        A1       1        LOGIC_REFERENCE 1
+           A1       3        +IN        1
+           A2       1        LOGIC_REFERENCE 1
+           A2       3        +IN        1
+           C11      2        2          1
+           C13      2        2          1
+           C14      2        2          1
+           C17      2        2          1
+           C2       2        2          1
+           C3       2        2          1
+           C36      2        2          1
+           C4       2        2          1
+           C42      2        2          1
+           C43      2        2          1
+           C44      2        2          1
+           C45      2        2          1
+           C46      2        2          1
+           C47      2        2          1
+           C48      2        2          1
+           C5       2        2          1
+           C6       2        2          1
+           ENABLE   3        S          1
+           JP1      1        1          1
+           JP1      2        2          1
+           JP2      1        1          1
+           JP2      2        2          1
+           JP3      1        1          1
+           JP3      2        2          1
+           JP4      1        1          1
+           JP4      2        2          1
+           JP5      SLEEVE   SLEEVE     1
+           JP6      SLEEVE   SLEEVE     1
+           PH10     3        S          1
+           PH11     1        S          1
+           PH12     3        S          1
+           PH13     1        S          1
+           R13      1        1          1
+           R7       1        1          1
+           RST      1        S          1
+           U1       10       COM2       1
+           U1       14       MODE       1
+           U1       15       GAIN       1
+           U1       17       COMM       1
+           U1       24       COMM_2     1
+           U1       25       ENBV       1
+           U1       27       HILO       1
+           U1       31       COM1       1
+           U2       20       COMM       1
+           U2       3        COMM_2     1
+           U2       33       EP         1
+           Z3       5        GND        1
+           Z3_SPARE 5        GND        1
+           Z3_SPARE 8        DI2        1
+
+I1PO       A1       2        -IN        1
+           C26      2        2          1
+           R39      2        2          1
+           U2       24       I1PO       1
+
+INH1       C1       2        2          1
+           C2       1        1          1
+           C39      2        2          1
+           U1       3        INH1       1
+
+I_CH_OUT   JP5      TIP      LEFT       1
+           JP6      RING     RIGHT      1
+           R32      1        1          1
+
+LMD1       C6       1        1          1
+           U1       4        LMD1       1
+
+LMD2       C5       1        1          1
+           U1       5        LMD2       1
+
+LON1       R26      1        1          1
+           R9       2        2          1
+           U1       1        LON1       1
+
+LOP1       R25      1        1          1
+           U1       32       LOP1       1
+
+N$1        C11      1        1          1
+           U1       13       VCM2       1
+
+N$2        C14      1        1          1
+           U1       28       VCM1       1
+
+N$3        C13      1        1          1
+           U1       16       RCLMP      1
+
+N$4        C1       1        1          1
+           L1       2        2          1
+
+N$5        C9       1        1          1
+           R6       1        1          1
+           R7       2        2          1
+           Z3       4        DI1        1
+
+N$6        C39      1        1          1
+           R9       1        1          1
+
+N$7        L1       1        1          1
+           SMA_IN_1 1        1          1
+
+N$8        C9       2        2          1
+           LO       1        1          1
+           R13      2        2          1
+
+N$9        C36      1        1          1
+           C48      1        1          1
+           L4       2        2          1
+           U2       21       VNEG       1
+
+N$10       C17      1        1          1
+           U2       6        LODC       1
+
+N$11       RST      2        S          1
+           U2       15       RSET       1
+
+PH10       PH10     2        S          1
+           U2       31       PH10       1
+
+PH11       PH11     2        S          1
+           U2       32       PH11       1
+
+PH12       PH12     2        S          1
+           U2       1        PH12       1
+
+PH13       PH13     2        S          1
+           U2       2        PH13       1
+
+Q1PO       A2       2        -IN        1
+           C29      2        2          1
+           R40      2        2          1
+           U2       23       Q1PO       1
+
+Q_CH_OUT   JP5      RING     RIGHT      1
+           JP6      TIP      LEFT       1
+           R33      1        1          1
+
+RFIN       R26      2        2          1
+           U2       28       RF1N       1
+
+RFIP       R25      2        2          1
+           U2       29       RF1P       1
+
+VCC        Z3       1        VCC        1
+
+VPOS       C4       1        1          1
+           ENABLE   1        S          1
+           L3       1        1          1
+           U2       27       VPOS       1
+           U2       30       VPOS_2     1
+
+VPS        R100     2        2          1
+           U1       2        VPS1       1
+           U1       26       ENBL       1
+           U1       7        VPS2       1
+
+VPSV       C42      1        1          1
+           C43      1        1          1
+           L5       1        1          1
+           R100     1        1          1
+           U1       21       VPSV       1
+
