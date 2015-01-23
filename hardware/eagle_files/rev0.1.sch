@@ -13041,6 +13041,7 @@ Variant PTH is our storefront SKU PRT-08032</description>
 <part name="C8" library="resistor" deviceset="CPOL-US" device="CT3216" value="10Uf 4ESR"/>
 <part name="GND33" library="supply1" deviceset="GND" device=""/>
 <part name="GND34" library="supply1" deviceset="GND" device=""/>
+<part name="GND35" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13333,6 +13334,7 @@ Variant PTH is our storefront SKU PRT-08032</description>
 <instance part="C8" gate="G$1" x="-53.34" y="157.48"/>
 <instance part="GND33" gate="1" x="-88.9" y="149.86"/>
 <instance part="GND34" gate="1" x="-53.34" y="149.86"/>
+<instance part="GND35" gate="1" x="93.98" y="96.52"/>
 </instances>
 <busses>
 </busses>
@@ -13574,6 +13576,12 @@ Variant PTH is our storefront SKU PRT-08032</description>
 <segment>
 <pinref part="C8" gate="G$1" pin="-"/>
 <pinref part="GND34" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U1" gate="A" pin="EP"/>
+<pinref part="GND35" gate="1" pin="GND"/>
+<wire x1="91.44" y1="101.6" x2="93.98" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="101.6" x2="93.98" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LMD1" class="0">

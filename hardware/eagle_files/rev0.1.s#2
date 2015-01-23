@@ -12963,7 +12963,7 @@ Variant PTH is our storefront SKU PRT-08032</description>
 <part name="R100" library="resistor" deviceset="R-US_" device="R1206" value="0"/>
 <part name="Z3" library="ds90c401" deviceset="DS90C401_D_8" device=""/>
 <part name="Z3_SPARE" library="ds90c401" deviceset="DS90C401_D_8" device=""/>
-<part name="C3" library="resistor" deviceset="C-US" device="C1206" value="0.1uF"/>
+<part name="C12" library="resistor" deviceset="C-US" device="C1206" value="0.1uF"/>
 <part name="C9" library="resistor" deviceset="C-US" device="C1206" value="0.1uF"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="supply2" deviceset="+5V" device=""/>
@@ -13169,7 +13169,7 @@ Variant PTH is our storefront SKU PRT-08032</description>
 <attribute name="NAME" x="261.9756" y="-79.7814" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 <attribute name="VALUE" x="258.4958" y="-84.8614" size="2.0828" layer="96" ratio="6" rot="SR0"/>
 </instance>
-<instance part="C3" gate="G$1" x="231.14" y="-78.74" smashed="yes">
+<instance part="C12" gate="G$1" x="231.14" y="-78.74" smashed="yes">
 <attribute name="NAME" x="224.536" y="-78.105" size="1.778" layer="95"/>
 <attribute name="VALUE" x="224.536" y="-82.931" size="1.778" layer="96"/>
 </instance>
@@ -13408,7 +13408,7 @@ Variant PTH is our storefront SKU PRT-08032</description>
 <pinref part="GND9" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C3" gate="G$1" pin="2"/>
+<pinref part="C12" gate="G$1" pin="2"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -13748,7 +13748,7 @@ Variant PTH is our storefront SKU PRT-08032</description>
 </segment>
 <segment>
 <pinref part="Z3_SPARE" gate="A" pin="VCC"/>
-<pinref part="C3" gate="G$1" pin="1"/>
+<pinref part="C12" gate="G$1" pin="1"/>
 <wire x1="238.76" y1="-76.2" x2="231.14" y2="-76.2" width="0.1524" layer="91"/>
 <pinref part="SUPPLY2" gate="+5V" pin="+5V"/>
 <junction x="231.14" y="-76.2"/>
