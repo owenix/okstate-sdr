@@ -12993,7 +12993,7 @@ Variant PTH is our storefront SKU PRT-08032</description>
 <part name="L3" library="resistor" deviceset="R-US_" device="R0603" value="120nH"/>
 <part name="ENABLE" library="con-molex" deviceset="22-23-2031" device=""/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
-<part name="C4" library="resistor" deviceset="C-US" device="C1206" value="0.1uF"/>
+<part name="C24" library="resistor" deviceset="C-US" device="C1206" value="0.1uF"/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
@@ -13238,7 +13238,7 @@ Variant PTH is our storefront SKU PRT-08032</description>
 <instance part="ENABLE" gate="-2" x="147.32" y="182.88" rot="R90"/>
 <instance part="ENABLE" gate="-3" x="149.86" y="182.88" rot="R90"/>
 <instance part="GND18" gate="1" x="152.4" y="170.18"/>
-<instance part="C4" gate="G$1" x="129.54" y="177.8" smashed="yes">
+<instance part="C24" gate="G$1" x="129.54" y="177.8" smashed="yes">
 <attribute name="NAME" x="122.936" y="178.435" size="1.778" layer="95"/>
 <attribute name="VALUE" x="122.936" y="173.609" size="1.778" layer="96"/>
 </instance>
@@ -13463,7 +13463,7 @@ Variant PTH is our storefront SKU PRT-08032</description>
 <wire x1="152.4" y1="180.34" x2="152.4" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C4" gate="G$1" pin="2"/>
+<pinref part="C24" gate="G$1" pin="2"/>
 <pinref part="GND19" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -13908,7 +13908,7 @@ Variant PTH is our storefront SKU PRT-08032</description>
 <wire x1="144.78" y1="180.34" x2="137.16" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="180.34" x2="137.16" y2="182.88" width="0.1524" layer="91"/>
 <junction x="137.16" y="180.34"/>
-<pinref part="C4" gate="G$1" pin="1"/>
+<pinref part="C24" gate="G$1" pin="1"/>
 <wire x1="129.54" y1="180.34" x2="137.16" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="180.34" x2="137.16" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="170.18" x2="139.7" y2="170.18" width="0.1524" layer="91"/>
