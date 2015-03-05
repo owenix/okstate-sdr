@@ -1,0 +1,298 @@
+Pinlist
+
+Exported from rev0.1.sch at 1/8/15 8:57 PM
+
+EAGLE Version 7.2.0 Copyright (c) 1988-2014 CadSoft
+
+Part     Pad      Pin        Dir      Net
+
++5V_IN   1        1          pas      +5V
+         2        2          pas      +5V
+
+-5V_IN   1        1          pas      -5V
+         2        2          pas      -5V
+
+A1       1        LOGIC_REFERENCE pas      GND
+         2        -IN        pas      I1PO
+         3        +IN        pas      GND
+         4        -VS        pwr      -5VS
+         5        CCOMP      pas      CCOMP
+         6        VOUT       pas      A1OUT
+         7        +VS        pwr      +5VS_FLTRD
+         8        DISABLE*   pas      +5VS
+
+A2       1        LOGIC_REFERENCE pas      GND
+         2        -IN        pas      Q1PO
+         3        +IN        pas      GND
+         4        -VS        pwr      -5VS
+         5        CCOMP      pas      CCOMP_A2
+         6        VOUT       pas      A2OUT
+         7        +VS        pwr      +5VS
+         8        DISABLE*   pas      +5VS
+
+C1       1        1          pas      N$4
+         2        2          pas      INH1
+
+C2       1        1          pas      INH1
+         2        2          pas      GND
+
+C3       1        1          pas      +5V
+         2        2          pas      GND
+
+C4       1        1          pas      VPOS
+         2        2          pas      GND
+
+C5       1        1          pas      LMD2
+         2        2          pas      GND
+
+C6       1        1          pas      LMD1
+         2        2          pas      GND
+
+C7       +        -          pas      GND
+         -        +          pas      +5V
+
+C8       +        -          pas      GND
+         -        +          pas      -5V
+
+C9       1        1          pas      N$5
+         2        2          pas      N$8
+
+C11      1        1          pas      N$1
+         2        2          pas      GND
+
+C13      1        1          pas      N$3
+         2        2          pas      GND
+
+C14      1        1          pas      N$2
+         2        2          pas      GND
+
+C17      1        1          pas      N$10
+         2        2          pas      GND
+
+C26      1        1          pas      A1OUT
+         2        2          pas      I1PO
+
+C27      1        1          pas      CCOMP
+         2        2          pas      -5VS
+
+C28      1        1          pas      CCOMP_A2
+         2        2          pas      -5VS
+
+C29      1        1          pas      A2OUT
+         2        2          pas      Q1PO
+
+C36      1        1          pas      N$9
+         2        2          pas      GND
+
+C39      1        1          pas      N$6
+         2        2          pas      INH1
+
+C42      1        1          pas      VPSV
+         2        2          pas      GND
+
+C43      1        1          pas      VPSV
+         2        2          pas      GND
+
+C44      1        1          pas      +5VS
+         2        2          pas      GND
+
+C45      1        1          pas      -5VS
+         2        2          pas      GND
+
+C46      1        1          pas      +5VS
+         2        2          pas      GND
+
+C47      1        1          pas      -5VS
+         2        2          pas      GND
+
+C48      1        1          pas      N$9
+         2        2          pas      GND
+
+ENABLE   1        S          pas      VPOS
+         2        S          pas      ENBL
+         3        S          pas      GND
+
+JP1      1        1          pas      GND
+         2        2          pas      GND
+
+JP2      1        1          pas      GND
+         2        2          pas      GND
+
+JP3      1        1          pas      GND
+         2        2          pas      GND
+
+JP4      1        1          pas      GND
+         2        2          pas      GND
+
+JP5      TIP      LEFT       io       I_CH_OUT
+         RING     RIGHT      io       Q_CH_OUT
+         SLEEVE   SLEEVE     io       GND
+
+JP6      TIP      LEFT       io       Q_CH_OUT
+         RING     RIGHT      io       I_CH_OUT
+         SLEEVE   SLEEVE     io       GND
+
+L1       1        1          pas      N$7
+         2        2          pas      N$4
+
+L3       1        1          pas      VPOS
+         2        2          pas      +5V
+
+L4       1        1          pas      -5V
+         2        2          pas      N$9
+
+L5       1        1          pas      VPSV
+         2        2          pas      +5V
+
+L6       1        1          pas      +5V
+         2        2          pas      +5VS
+
+L7       1        1          pas      -5VS
+         2        2          pas      -5V
+
+LO       1        1          pas      N$8
+
+PH10     1        S          pas      +5V
+         2        S          pas      PH10
+         3        S          pas      GND
+
+PH11     1        S          pas      GND
+         2        S          pas      PH11
+         3        S          pas      +5V
+
+PH12     1        S          pas      +5V
+         2        S          pas      PH12
+         3        S          pas      GND
+
+PH13     1        S          pas      GND
+         2        S          pas      PH13
+         3        S          pas      +5V
+
+R1       1        1          pas      4LON
+         2        2          pas      4LOP
+
+R6       1        1          pas      N$5
+         2        2          pas      +5V
+
+R7       1        1          pas      GND
+         2        2          pas      N$5
+
+R9       1        1          pas      N$6
+         2        2          pas      LON1
+
+R13      1        1          pas      GND
+         2        2          pas      N$8
+
+R25      1        1          pas      LOP1
+         2        2          pas      RFIP
+
+R26      1        1          pas      LON1
+         2        2          pas      RFIN
+
+R32      1        1          pas      I_CH_OUT
+         2        2          pas      A1OUT
+
+R33      1        1          pas      Q_CH_OUT
+         2        2          pas      A2OUT
+
+R39      1        1          pas      A1OUT
+         2        2          pas      I1PO
+
+R40      1        1          pas      A2OUT
+         2        2          pas      Q1PO
+
+R100     1        1          pas      VPSV
+         2        2          pas      VPS
+
+RST      1        S          pas      GND
+         2        S          pas      N$11
+         3        S          pas      +5V
+
+SMA_IN_1 1        1          pas      N$7
+
+U1       1        LON1       pas      LON1
+         2        VPS1       pas      VPS
+         3        INH1       pwr      INH1
+         4        LMD1       pas      LMD1
+         5        LMD2       pas      LMD2
+         6        INH2       pas               *** unconnected ***
+         7        VPS2       pas      VPS
+         8        LON2       pas               *** unconnected ***
+         9        LOP2       pas               *** unconnected ***
+         10       COM2       pas      GND
+         11       VIP2       pas               *** unconnected ***
+         12       VIN2       pas               *** unconnected ***
+         13       VCM2       pas      N$1
+         14       MODE       pas      GND
+         15       GAIN       pwr      GND
+         16       RCLMP      pas      N$3
+         17       COMM       pas      GND
+         18       VOH2       pas               *** unconnected ***
+         19       VOL2       pas               *** unconnected ***
+         20       NC         pas               *** unconnected ***
+         21       VPSV       pas      VPSV
+         22       VOL1       pas               *** unconnected ***
+         23       VOH1       pas               *** unconnected ***
+         24       COMM_2     pas      GND
+         25       ENBV       pas      GND
+         26       ENBL       pwr      VPS
+         27       HILO       pas      GND
+         28       VCM1       pas      N$2
+         29       VIN1       pas               *** unconnected ***
+         30       VIP1       pas               *** unconnected ***
+         31       COM1       pas      GND
+         32       LOP1       pas      LOP1
+         33       EP         pas               *** unconnected ***
+
+U2       1        PH12       pas      PH12
+         2        PH13       pas      PH13
+         3        COMM_2     pwr      GND
+         4        4LOP       pas      4LOP
+         5        4LON       pas      4LON
+         6        LODC       pas      N$10
+         7        PH23       pas               *** unconnected ***
+         8        PH22       pas               *** unconnected ***
+         9        PH21       pas               *** unconnected ***
+         10       PH20       pas               *** unconnected ***
+         11       VPOS_3     pas               *** unconnected ***
+         12       RF2P       pas               *** unconnected ***
+         13       RF2N       pas               *** unconnected ***
+         14       VPOS_4     pas               *** unconnected ***
+         15       RSET       pwr      N$11
+         16       I2NO       pas               *** unconnected ***
+         17       I2PO       pas               *** unconnected ***
+         18       Q2PO       pas               *** unconnected ***
+         19       Q2NO       pas               *** unconnected ***
+         20       COMM       pas      GND
+         21       VNEG       pas      N$9
+         22       Q1NO       pas               *** unconnected ***
+         23       Q1PO       pas      Q1PO
+         24       I1PO       pas      I1PO
+         25       I1NO       pas               *** unconnected ***
+         26       ENBL       pwr      ENBL
+         27       VPOS       pas      VPOS
+         28       RF1N       pas      RFIN
+         29       RF1P       pas      RFIP
+         30       VPOS_2     pas      VPOS
+         31       PH10       pas      PH10
+         32       PH11       pas      PH11
+         33       EP         pas      GND
+
+Z3       1        VCC        pwr      VCC
+         2        DO1-       out      4LON
+         3        DO1+       out      4LOP
+         4        DI1        in       N$5
+         5        GND        pwr      GND
+         6        DO2-       out               *** unconnected ***
+         7        DO2+       out               *** unconnected ***
+         8        DI2        in                *** unconnected ***
+
+Z3_SPARE 1        VCC        pwr      +5V
+         2        DO1-       out               *** unconnected ***
+         3        DO1+       out               *** unconnected ***
+         4        DI1        in                *** unconnected ***
+         5        GND        pwr      GND
+         6        DO2-       out               *** unconnected ***
+         7        DO2+       out               *** unconnected ***
+         8        DI2        in       GND
+

@@ -1,0 +1,76 @@
+Partlist
+
+Exported from rev0.1.sch at 1/8/15 8:57 PM
+
+EAGLE Version 7.2.0 Copyright (c) 1988-2014 CadSoft
+
+Assembly variant: 
+
+Part     Value           Device          Package               Library                       Sheet
+
++5V_IN   M023.5MM        M023.5MM        SCREWTERMINAL-3.5MM-2 SparkFun-Connectors           1
+-5V_IN   M023.5MM        M023.5MM        SCREWTERMINAL-3.5MM-2 SparkFun-Connectors           1
+A1       AD8021ARMZ      AD8021ARMZ      RM_8                  ad8021                        1
+A2       AD8021ARMZ      AD8021ARMZ      RM_8                  ad8021                        1
+C1       0.1uF           C-USC1206       C1206                 resistor                      1
+C2       22pF            C-USC1206       C1206                 resistor                      1
+C3       0.1uF           C-USC1206       C1206                 resistor                      1
+C4       0.1uF           C-USC1206       C1206                 resistor                      1
+C5       0.1uF           C-USC1206       C1206                 resistor                      1
+C6       0.1uF           C-USC1206       C1206                 resistor                      1
+C7       10Uf 4ESR       CPOL-USCT3216   CT3216                resistor                      1
+C8       10Uf 4ESR       CPOL-USCT3216   CT3216                resistor                      1
+C9       0.1uF           C-USC1206       C1206                 resistor                      1
+C11      0.1uF           C-USC1206       C1206                 resistor                      1
+C13      0.1uF           C-USC1206       C1206                 resistor                      1
+C14      0.1uF           C-USC1206       C1206                 resistor                      1
+C17      0.1uF           C-USC1206       C1206                 resistor                      1
+C26      2.2nF           C-USC1206       C1206                 resistor                      1
+C27      5pF             C-USC1206       C1206                 resistor                      1
+C28      5pF             C-USC1206       C1206                 resistor                      1
+C29      2.2nF           C-USC1206       C1206                 resistor                      1
+C36      0.1uF           C-USC1206       C1206                 resistor                      1
+C39      0.018uF         C-USC1206       C1206                 resistor                      1
+C42      0.1uF           C-USC1206       C1206                 resistor                      1
+C43      1nF             C-USC1206       C1206                 resistor                      1
+C44      0.1uF           C-USC1206       C1206                 resistor                      1
+C45      0.1uF           C-USC1206       C1206                 resistor                      1
+C46      0.1uF           C-USC1206       C1206                 resistor                      1
+C47      0.1uF           C-USC1206       C1206                 resistor                      1
+C48      0.1uF           C-USC1206       C1206                 resistor                      1
+ENABLE   22-23-2031      22-23-2031      22-23-2031            con-molex                     1
+JP1      M023.5MM        M023.5MM        SCREWTERMINAL-3.5MM-2 SparkFun-Connectors           1
+JP2      M023.5MM        M023.5MM        SCREWTERMINAL-3.5MM-2 SparkFun-Connectors           1
+JP3      M023.5MM        M023.5MM        SCREWTERMINAL-3.5MM-2 SparkFun-Connectors           1
+JP4      M023.5MM        M023.5MM        SCREWTERMINAL-3.5MM-2 SparkFun-Connectors           1
+JP5                      AUDIO-JACKPTH   AUDIO-JACK            SparkFun-Connectors           1
+JP6                      AUDIO-JACKPTH   AUDIO-JACK            SparkFun-Connectors           1
+L1       120nH           R-US_R0603      R0603                 resistor                      1
+L3       120nH           R-US_R0603      R0603                 resistor                      1
+L4       120nH           R-US_R0603      R0603                 resistor                      1
+L5       120nH           R-US_R0603      R0603                 resistor                      1
+L6       120nH           R-US_R0603      R0603                 resistor                      1
+L7       120nH           R-US_R0603      R0603                 resistor                      1
+LO       901-143         901-143         AMPHENOL_901-143      Amphenol_By_element14_Batch_1 1
+PH10     22-23-2031      22-23-2031      22-23-2031            con-molex                     1
+PH11     22-23-2031      22-23-2031      22-23-2031            con-molex                     1
+PH12     22-23-2031      22-23-2031      22-23-2031            con-molex                     1
+PH13     22-23-2031      22-23-2031      22-23-2031            con-molex                     1
+R1       100             R-US_R1206      R1206                 resistor                      1
+R6       3.48k           R-US_R1206      R1206                 resistor                      1
+R7       1.5k            R-US_R1206      R1206                 resistor                      1
+R9       274             R-US_R0603      R0603                 resistor                      1
+R13      49.9            R-US_R1206      R1206                 resistor                      1
+R25      20              R-US_R1206      R1206                 resistor                      1
+R26      20              R-US_R1206      R1206                 resistor                      1
+R32      0               R-US_R1206      R1206                 resistor                      1
+R33      0               R-US_R1206      R1206                 resistor                      1
+R39      787             R-US_R1206      R1206                 resistor                      1
+R40      787             R-US_R1206      R1206                 resistor                      1
+R100     0               R-US_R1206      R1206                 resistor                      1
+RST      22-23-2031      22-23-2031      22-23-2031            con-molex                     1
+SMA_IN_1 901-143         901-143         AMPHENOL_901-143      Amphenol_By_element14_Batch_1 1
+U1       AD8332ACPZ-R7   AD8332ACPZ-R7   CP_32_2               ad8332                        1
+U2       AD8333ACPZ-REEL AD8333ACPZ-REEL CP_32_2               ad8333                        1
+Z3       DS90C401_D_8    DS90C401_D_8    M08A                  ds90c401                      1
+Z3_SPARE DS90C401_D_8    DS90C401_D_8    M08A                  ds90c401                      1
